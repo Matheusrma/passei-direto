@@ -1,0 +1,12 @@
+{
+  "name": "passei-direto",
+  "description": "Processo seletivo Passei Direto",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "~3.2.6",
+    "jade": "~0.31.2",
+    "express-custom-mime-types": "~1.0.4",
+    "mongodb": "*",
+    "monk": "*"
+  }
+}

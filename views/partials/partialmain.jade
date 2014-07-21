@@ -1,0 +1,20 @@
+div(ng-controller='MainCtrl')
+  .row.section
+  ul.library-list
+    li(ng-repeat='library in libraries')
+      .library
+        h1 {{library.name}} 
+          .input-group.input-group-sm
+            span.input-group-addon Search:
+            input.form-control(type="text", ng-model="query") 
+          ul.album-list
+            li(ng-repeat='album in library.albums | filter:query')
+              .library-item
+                a(ng-href='/album/{{album._id}}')
+                  p {{album.title}} By {{album.author}} - {{album.year}}
+          form(action = '/newalbum')
+            input.btn.btn-success(type='submit', ng-href = '/add', value = 'New Album')
+  hr.section-border
+
+  .row#footer
+    p Developed by matheusrma 

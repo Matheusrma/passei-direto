@@ -1,0 +1,14 @@
+div(ng-controller='NewAlbumCtrl')
+  .row.section
+    h1 Add New Album  
+    form(ng-submit='add()')
+      .input-group
+        span.input-group-addon Title:
+        input.form-control(type="text", ng-model='album.title', required, placeholder="...")
+      .input-group
+        span.input-group-addon Author:
+        input.form-control(type="text", ng-model='album.author',required, placeholder="Nirvana, Foo Fighters, ...")
+      .input-group
+        span.input-group-addon Launch year:
+        input.form-control(type="text", ng-model='album.year', required, placeholder="The year...")
+      input.btn.btn-success(type='submit', value='Add Album') 

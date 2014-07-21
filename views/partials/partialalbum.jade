@@ -1,0 +1,15 @@
+div(ng-controller='AlbumCtrl')
+  .row.section
+    h1 Album Info:
+    form(ng-submit='update()')
+      .input-group
+        span.input-group-addon Title:
+        input.form-control(type="text", ng-model='album.title', required, placeholder="...")
+      .input-group
+        span.input-group-addon Author:
+        input.form-control(type="text", ng-model='album.author',required, placeholder="Nirvana, Foo Fighters, ...")
+      .input-group
+        span.input-group-addon Launch year:
+        input.form-control(type="text", ng-model='album.year', required, placeholder="The year...")
+      input.btn.btn-primary(type='submit', value='Update Album Info') 
+    button.btn.btn-danger(ng-click='delete()') Delete
