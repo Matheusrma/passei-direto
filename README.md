@@ -10,4 +10,6 @@ Próximos passos:
 
 Para Rodar:
   - Rode um MongoDb na porta 27017 na pasta ./data
-  - Use o comando "foreman start" na raiz do projeto
+  - Use o comando 
+    ```foreman start``` 
+    na raiz do projeto
